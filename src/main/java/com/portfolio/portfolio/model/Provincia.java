@@ -1,0 +1,24 @@
+package com.portfolio.portfolio.model;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
+@Entity
+public class Provincia {
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
+    private String nombre;
+    private Integer codigo_postal;
+    @JoinColumn(name ="pais_id",unique =false)
+    @OneToOne(cascade = CascadeType.ALL)
+    private Pais pais;
+}
