@@ -1,0 +1,24 @@
+<div class="container bg-secondary bg-gradient border border-secondary rounded-3 my-4 pt-2">
+    <div class="mx-5 my-4">
+        <div class="row mb-3">
+            <div class="col-11">
+                <h3>Proyectos</h3>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn" placement="left" ngbTooltip="Crear un registro de proyecto."
+                    tooltipClass="tooltip-nuevo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-plus" viewBox="0 0 16 16">
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <app-project-item [title]="title" [company]="company" [date]="date" [picture]="picture" [resume]="resume"
+                [link]="link">
+            </app-project-item>
+        </div>
+    </div>
+</div>

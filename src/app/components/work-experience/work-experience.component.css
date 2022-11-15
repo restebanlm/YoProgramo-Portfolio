@@ -1,0 +1,18 @@
+.tooltip-nuevo .tooltip-inner {
+  background-color: rgb(10, 89, 153);
+  font-size: 110%;
+}
+
+.tooltip-nuevo .arrow::before {
+  border-top-color: rgb(10, 89, 153);
+}
+
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  color: cornflowerblue;
+  border: 1px solid black;
+  border-radius: 50px;
+}

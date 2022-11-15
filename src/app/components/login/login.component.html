@@ -1,0 +1,25 @@
+<!-- Modal para iniciar sesión -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <form [formGroup]="form">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                    <h2 class="modal-title" id="loginModalLabel">INICIAR SESIÓN</h2>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mb-3">
+                        <label for="inputUsuario" class="form-label">Usuario</label>
+                        <input type="text" class="form-control" id="inputUsuario" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary" (click)="onClickIniciarSesion()">Iniciar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
